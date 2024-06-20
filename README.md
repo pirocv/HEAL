@@ -1,5 +1,5 @@
 # HEAL
-
+- Machine learning based genome analysis and risk prediction model
 
 ## supported file type
 - VCF files
@@ -21,3 +21,6 @@
    a. Disease gene lists
    b. Disease prediction model
 
+## Citation
+Please cite the following paper
+- ...
