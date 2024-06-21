@@ -1,5 +1,5 @@
 # HEAL
-- Machine learning based genome analysis and risk prediction model
+- Machine learning-based genome analysis and risk prediction model.
 
 ## supported file type
 - VCF files
@@ -12,15 +12,15 @@
 - scipy
 
 ## How to run
-
 1. Prepare cohort VCF file of exome or whole genome sequencing.
-2. . Annotate VCF file with ANNOVAR software
-   a. with allele frequency information, deleteriousness score
-3. Preprosess data
-4. Run machine learning model.
+2. Annotate VCF file
+   a. using ANNOVAR
+   b. with allele frequency information, deleteriousness score
+4. Preprosess annotated genotype data
+5. Run the machine learning model. The model outputs
    a. Disease gene lists
-   b. Disease prediction model
+   b. Genetic risk prediction model
 
 ## Citation
 Please cite the following paper
-- ...
+- ......
