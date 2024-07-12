@@ -2,7 +2,8 @@
 - Machine learning-based genome analysis and risk prediction model.
 
 ## supported file type
-- VCF files
+- csv file (Mutation burden matrix)
+   - row: sample ID, column: gene name
 
 ## requirements
 - python3
@@ -11,16 +12,14 @@
 - scikit-learn
 - scipy
 
-
 ## How to run
-1. Prepare cohort VCF file of exome or whole genome sequencing.
-2. Annotate VCF file
-   a. using ANNOVAR
-   b. with allele frequency information, deleteriousness score
-4. Preprosess annotated genotype data
-5. Run the machine learning model. The model outputs
+0. prepare mutation burden matrix
+   a. annotate VCF file of whole exome or genome sequencing data with gene name, deleteriousness score, and allele frequency info.
+   b. Preprosess annotated genotype data to calculate mutation burden. Sample mutation burden file is available in `toy_data`
+1. Run the HEAL script. The model outputs
    a. Disease gene lists
    b. Genetic risk prediction model
+   c. Prediction performance summary
 
 ## Citation
 Please cite the following paper
