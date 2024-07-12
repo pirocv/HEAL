@@ -13,13 +13,15 @@
 - scipy
 
 ## How to run
-0. prepare mutation burden matrix
-   a. annotate VCF file of whole exome or genome sequencing data with gene name, deleteriousness score, and allele frequency info.
-   b. Preprosess annotated genotype data to calculate mutation burden. Sample mutation burden file is available in `toy_data`
-1. Run the HEAL script. The model outputs
-   a. Disease gene lists
-   b. Genetic risk prediction model
-   c. Prediction performance summary
+### Step0 Prepare mutation burden matrix.
+1. Annotate VCF file of whole exome or genome sequencing data with gene name, deleteriousness score, and allele frequency info.
+2. Preprosess annotated genotype data to calculate mutation burden. Sample mutation burden file is available in `toy_data`.
+### Step 1 Run the HEAL script
+1. Input file: Mutation burden matrix.
+### Step 2 The model outputs
+1. Disease gene lists.
+2. Genetic risk prediction model.
+3. Prediction performance summary.
 
 ## Citation
 Please cite the following paper
