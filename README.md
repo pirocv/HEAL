@@ -23,6 +23,28 @@
 2. Genetic risk prediction model.
 3. Prediction performance summary.
 
+### Usage
+Run the HEAL script from the command line with the following arguments:
+
+```
+python HEAL.py --file_path <path_to_input_file> [options]
+```
+
+### Command-line Arguments
+
+| Argument | Type | Required | Default | Description |
+|----------|------|----------|---------|-------------|
+| `--file_path` | str | Yes | - | Full path to the input file |
+| `--output` | str | No | Current working directory | Output path |
+| `--splits` | int | No | 5 | Number of splits for cross-validation |
+| `--trials` | int | No | 1 | Number of trials to run |
+| `--l1` | float | No | 1.0 | Lower bound of lambda candidates |
+| `--l2` | float | No | 40.0 | Upper bound of lambda candidates |
+| `--lfidelity` | int | No | 5 | Fidelity of linspace of lambda candidates |
+| `--scoring` | str | No | 'roc_auc' | Scoring metric to maximize |
+| `--random_state` | int | No | 42 | Random state to start from |
+| `--tts` | bool | No | False | Use train_test_split instead of StratifiedKFold for outer CV |
+
 ## Citation
 Please cite the following paper
 - ......
