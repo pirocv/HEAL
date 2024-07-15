@@ -29,7 +29,7 @@ def run_single_trial(trial_data, total_folds):
 
     # Setup inner CV for tuning hyperparameters
     inner_cv = StratifiedKFold(n_splits=splits, shuffle=True, random_state=trial_idx)
-    pipe = make_pipeline(StandardScaler(), LogisticRegression(penalty='l1', solver='liblinear'))
+    pipe = make_pipeline(StandardScaler(with_mean=False), LogisticRegression(penalty='l1', solver='liblinear'))
     param_grid = {'logisticregression__C': 1 / np.array(lambda_candi)}
 
     # Fit the train data
@@ -189,7 +189,7 @@ def main():
 
     # Store it
     ## Create top folder with configuration
-    suffix = f'_{args.trials}trials_{args.splits}CV_{args.l1}to{args.l2}w{args.lfidelity}lambdarange_{args.tts}tts'
+    suffix = f'_{args.trials}trials_{args.splits}CV_{args.l1}to{args.l2}w{args.lfidelity}lambdarange_tts{args.tts}'
     path = args.output + '/' + file_name + suffix
     if not os.path.exists(path):
         os.makedirs(path)
