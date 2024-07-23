@@ -1,5 +1,5 @@
-# HEAL
-- Machine learning-based genome analysis and risk prediction model.
+# HEAL (Hierarchical Estimate from Agnostic Learning)
+- Machine learning-based genome analysis and risk prediction framework.
 
 ## supported file type
 - csv file (Mutation burden matrix)
