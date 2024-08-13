@@ -47,7 +47,7 @@ python HEAL.py --file_path <path_to_input_file> [options]
 
 ## Citation
 Please cite the following paper
-- ......
+- Hirotaka Ieki, Kaoru Ito, Sai Zhang, Satoshi Koyama, Martin Kjellberg, Hiroki Yoshida, Ryo Kurosawa, Hiroshi Matsunaga, Kazuo Miyazawa, Nobuyuki Enzan, Changhoon Kim, Jeong-Sun Seo, Koichiro Higasa, Kouichi Ozaki, Yoshihiro Onouchi, Koichi Matsuda, Yoichiro Kamatani, Chikashi Terao, Fumihiko Matsuda, Michael Snyder, Issei Komuro "Machine Learning Reveals the Contribution of Rare Genetic Variants and Enhances Risk Prediction for Coronary Artery Disease in the Japanese Population" medRxiv 2024 doi.org/10.1101/2024.08.13.24311909
 
 <img width="200" alt="snyderlab_logo" src="https://github.com/pirocv/HEAL/assets/51925146/0c17a201-9642-4da3-9457-5ff83ddb9a1b">
 <img width="100" alt="hp_riken" src="https://github.com/pirocv/HEAL/assets/51925146/b37c836b-1a0e-4a2b-aca5-39baf220e4ea">
